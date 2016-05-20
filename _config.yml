@@ -4,6 +4,7 @@ github_username:  ballroom-dance-club
 permalink: pretty
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 sass:
   style: compressed
