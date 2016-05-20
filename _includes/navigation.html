@@ -1,0 +1,5 @@
+<ul>
+{% for site_page in site.pages %}
+    <li><a href="{{ site_page.url }}">{{ site_page.title }}</a></li>
+{% endfor %}
+</ul>
