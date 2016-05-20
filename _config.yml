@@ -1,6 +1,9 @@
+url: "http://ballroomclubum.com"
+github_username:  ballroom-dance-club
+
 permalink: pretty
-sass:
-    style: compressed
 gems:
-    - jekyll-seo-tag
-    - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
