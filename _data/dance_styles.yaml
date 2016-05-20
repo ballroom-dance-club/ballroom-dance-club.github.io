@@ -1,0 +1,51 @@
+- name: International Standard
+  dances:
+    - name: Waltz
+    - name: Foxtrot
+    - name: Tango
+    - name: Quickstep
+    - name: Viennese Waltz
+
+- name: American Smooth
+  dances:
+    - name: Waltz
+    - name: Foxtrot
+    - name: Tango
+    - name: Viennese Waltz
+
+- name: International Latin
+  dances:
+    - name: Cha-Cha
+    - name: Samba
+    - name: Rumba
+    - name: Jive
+    - name: Paso Doble
+
+- name: American Rhythm
+  dances:
+    - name: Cha-Cha
+    - name: Rumba
+    - name: East Coast Swing
+    - name: Mambo
+    - name: Bolero
+
+- name: Latin Nightclub
+  dances:
+    - name: Salsa
+    - name: Merengue
+
+- name: African and Caribbean
+  dances:
+    - name: Zouk
+    - name: Kizomba
+
+- name: American Nightclub
+  dances:
+    - name: Hustle
+    - name: West Coast Swing
+    - name: Lindy Hop
+
+- name: Traditional and Folk
+  dances:
+    - name: Polka
+    - name: Argentine Tango

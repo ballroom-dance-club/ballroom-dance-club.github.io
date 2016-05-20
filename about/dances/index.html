@@ -1,0 +1,19 @@
+---
+layout: default
+title: Dance Styles
+---
+
+<h2>{{ page.title }}</h2>
+
+<ul>
+{% for style in site.data.dance_styles %}
+    <li>
+        {{ style.name }}
+        <ul>
+        {% for dance in style.dances %}
+            <li>{{ dance.name }}</li>
+        {% endfor %}
+        </ul>
+    </li>
+{% endfor %}
+</ul>
