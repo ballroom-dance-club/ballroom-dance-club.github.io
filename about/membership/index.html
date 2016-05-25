@@ -1,0 +1,24 @@
+---
+layout: default
+title: Membership
+weight: 2
+---
+
+<table>
+    <thead>
+        <tr>
+            <td>Audience</td>
+            <td>Semester Cost</td>
+            <td>Annual Cost</td>
+        </tr>
+    </thead>
+    <tbody>
+    {% for membership_type in site.data.memberships %}
+        <tr>
+            <td>{{ membership_type.name }}</td>
+            <td>${{ membership_type.semester_cost }}</td>
+            <td>${{ membership_type.annual_cost }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

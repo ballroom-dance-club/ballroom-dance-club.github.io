@@ -1,0 +1,11 @@
+- name: Students
+  semester_cost: 15
+  annual_cost: 40
+
+- name: University Affiliates
+  semester_cost: 25
+  annual_cost: 50
+
+- name: Public
+  semester_cost: 30
+  annual_cost: 60
