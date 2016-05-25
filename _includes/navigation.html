@@ -1,7 +1,8 @@
 <ul>
-{% for site_page in site.pages | sort: 'title' %}
-    {% if site_page.permalink != '/404.html' %}
-    <li><a href="{{ site_page.url }}">{{ site_page.title }}</a></li>
+{% assign pages = site.pages | sort:'weight' %}
+{% for page in pages %}
+    {% if page.permalink != '/404.html' %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
