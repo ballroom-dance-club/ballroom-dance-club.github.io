@@ -1,5 +1,5 @@
 <ul>
-{% assign pages = site.pages | sort:'weight' %}
+{% assign pages = site.pages | sort: 'weight' %}
 {% for page in pages %}
     {% if page.permalink != '/404.html' %}
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
