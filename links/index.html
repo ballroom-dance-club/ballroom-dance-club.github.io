@@ -7,7 +7,7 @@ weight: 8
 {% if site.data.friends %}
 <h3>Friends</h3>
 <ul>
-{% assign friends = site.data.friends | sort: 'name' %}
+{% assign friends = site.data.friends %}
 {% for friend in friends %}
     <li>
         <a href="{{ friend.url }}" rel="nofollow" target="_blank">{{ friend.name }}</a>
