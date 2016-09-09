@@ -1,0 +1,18 @@
+- segment: Students
+  duration: Semester
+  cost: 25
+- segment: Students
+  duration: Annual
+  cost: 50
+- segment: University Affiliates
+  duration: Semester
+  cost: 35
+- segment: University Affiliates
+  duration: Annual
+  cost: 60
+- segment: General Public
+  duration: Semester
+  cost: 40
+- segment: General Public
+  duration: Annual
+  cost: 70

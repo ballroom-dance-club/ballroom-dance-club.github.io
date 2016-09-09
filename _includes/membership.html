@@ -1,0 +1,43 @@
+<h2>Membership<a name="membership"><sup>&para;</sup></a></h2>
+<p>
+    The Ballroom Dance Club is open to everyone who has a passion for dancing! In order
+    to participate in the club's activities, you can either pay a membership fee per the
+    table below or pay a per-visit cost of $5. It's common for dancers to pay the per-visit
+    cost the first time or two and then buy a membership when they know they'll be coming
+    often!
+</p>
+<p>
+    Membership fees cover the cost of our Level 1 and Level 2 lessons. These lessons are
+    intended for beginners and intermediate dancers and are often taught by current members of
+    the <a href="http://michiganballroomteam.com" rel="nofollow">University of Michigan Ballroom Dance Team</a>.
+    Membership does not cover our Level 3 lessons, which are $5 per lesson. We make an effort
+    to bring in more advanced instructors for these lessons and our hope is that they challenge you
+    while teaching you a lot to improve your dancing! If there is an instructor you would like us
+    to invite to teach, please <a href="mailto:bdc-inquiry@umich.edu">let us know</a>!
+</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Who</th>
+                    <th>How Long</th>
+                    <th>How Much</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% assign segments = site.data.membership | group_by:"segment" %}
+                {% for segment in segments %}
+                    {% for membership_option in segment.items %}
+                    <tr>
+                        <td>{{ segment.name }}</td>
+                        <td>{{ membership_option.duration }}</td>
+                        <td>${{ membership_option.cost }}</td>
+                    </tr>
+                    {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

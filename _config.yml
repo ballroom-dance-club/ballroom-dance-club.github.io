@@ -1,5 +1,3 @@
-name: Ballroom Dance Club at the University of Michigan
-
 github_username:  ballroom-dance-club
 repository: ballroom-dance-club/ballroom-dance-club.github.io
 
@@ -12,3 +10,18 @@ sass:
   style: compressed
 
 exclude: [vendor]
+
+title: The Ballroom Dance Club
+
+description: >
+  The Ballroom Dance Club is an organization focused on learning
+  ballroom, Latin, and social dances for fun!
+
+facebook:
+  publisher: https://www.facebook.com/UMBDC
+
+social:
+  links:
+    - https://www.facebook.com/UMBDC
+
+timezone: America/Detroit
