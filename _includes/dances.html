@@ -1,0 +1,27 @@
+<h2>Dances<small><a name="dances"><sup>&para;</sup></a></small></h2>
+
+<p>
+    One of the best things about ballroom dancing is the variety of styles you can do!
+    Ballroom dances are split into four categories&mdash;two international styles and two American styles.
+    Each style has four or five dances. Some styles have dances with the same name, but the dances
+    themselves can be drastically different!
+</p>
+<p>
+    There are plenty of dances that aren't strictly ballroom dances, such as hustle and West Coast swing.
+    People often dance these at social events like weddings or clubs. There are also some popular traditional
+    and folk dances like the Polka.
+</p>
+<p>
+    Click on any of the dances below to read about them and watch a video to see
+    what the dance looks like!
+</p>
+
+{% for style in site.data.dances %}
+    <h3>{{ style.style }}</h3>
+    {% for dance in style.dances %}
+        <h4 data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}">{{ dance.name }}</h4>
+        <div id="{{ style.style | slugify }}-{{ dance.name | slugify }}" class="collapse collapsed">
+            Lorem ipsum dolor et simet{{ dance.description }}
+        </div>
+    {% endfor %}
+{% endfor %}

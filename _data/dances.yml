@@ -1,0 +1,93 @@
+- style: International Ballroom
+  description:
+  dances:
+    - name: Waltz
+      description:
+      youtube_video_id:
+    - name: Tango
+      description:
+      youtube_video_id:
+    - name: Foxtrot
+      description:
+      youtube_video_id:
+    - name: Quickstep
+      description:
+      youtube_video_id:
+    - name: Viennese Waltz
+      description:
+      youtube_video_id:
+- style: American Smooth
+  description:
+  dances:
+    - name: Waltz
+      description:
+      youtube_video_id:
+    - name: Tango
+      description:
+      youtube_video_id:
+    - name: Foxtrot
+      description:
+      youtube_video_id:
+    - name: Viennese Waltz
+      description:
+      youtube_video_id:
+- style: International Latin
+  description:
+  dances:
+    - name: Cha Cha
+      description:
+      youtube_video_id:
+    - name: Rumba
+      description:
+      youtube_video_id:
+    - name: Samba
+      description:
+      youtube_video_id:
+    - name: Jive
+      description:
+      youtube_video_id:
+    - name: Paso Doble
+      description:
+      youtube_video_id:
+- style: American Rhythm
+  description:
+  dances:
+    - name: Cha Cha
+      description:
+      youtube_video_id:
+    - name: Rumba
+      description:
+      youtube_video_id:
+    - name: East Coast Swing
+      description:
+      youtube_video_id:
+    - name: Bolero
+      description:
+      youtube_video_id:
+    - name: Mambo
+      description:
+      youtube_video_id:
+- style: Social
+  description:
+  dances:
+    - name: West Coast Swing
+      description:
+      youtube_video_id:
+    - name: Hustle
+      description:
+      youtube_video_id:
+    - name: Salsa
+      description:
+      youtube_video_id:
+    - name: Zouk
+      description:
+      youtube_video_id:
+- style: Folk/Traditional
+  description:
+  dances:
+    - name: Polka
+      description:
+      youtube_video_id:
+    - name: Argentine Tango
+      description:
+      youtube_video_id:
