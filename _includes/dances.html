@@ -36,7 +36,7 @@
                     <div class="panel-body">
                         <p>{{ dance.description }}</p>
                         {% if dance.youtube_video_id %}
-                            {% include youtube_video.html video_id=dance.youtube_video_id %}
+                            {% include youtube_video.html video_id=dance.youtube_video_id style=style.style dance=dance.name %}
                         {% endif %}
                     </div>
                 </div>
