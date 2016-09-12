@@ -18,6 +18,7 @@
 
 {% for style in site.data.dances %}
     <h3>{{ style.style }}</h3>
+    <p>{{ style.description }}</p>
     {% for dance in style.dances %}
         <h4><a data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}">{{ dance.name }}</a></h4>
         <div id="{{ style.style | slugify }}-{{ dance.name | slugify }}" class="collapse collapsed">
