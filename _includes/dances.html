@@ -20,7 +20,7 @@
     <h3>{{ style.style }}</h3>
     <p>{{ style.description }}</p>
     {% for dance in style.dances %}
-    <a href="#{{ style.style | slugify }}-{{ dance.name | slugify }}" name="{{ style.style | slugify }}-{{ dance.name | slugify }}" data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}-desc"><h4>{{ dance.name }}</h4></a>
+    <h4><a href="#{{ style.style | slugify }}-{{ dance.name | slugify }}" name="{{ style.style | slugify }}-{{ dance.name | slugify }}" data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}-desc">{{ dance.name }}</a></h4>
         <div id="{{ style.style | slugify }}-{{ dance.name | slugify }}-desc" class="collapse collapsed">
             <p>{{ dance.description }}</p>
             {% if dance.youtube_video_id %}
