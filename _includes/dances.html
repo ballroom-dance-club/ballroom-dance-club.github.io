@@ -18,14 +18,29 @@
 
 {% for style in site.data.dances %}
     <h3>{{ style.style }}</h3>
+
     <p>{{ style.description }}</p>
-    {% for dance in style.dances %}
-    <h4><a href="#{{ style.style | slugify }}-{{ dance.name | slugify }}" name="{{ style.style | slugify }}-{{ dance.name | slugify }}" data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}-desc">{{ dance.name }}</a></h4>
-        <div id="{{ style.style | slugify }}-{{ dance.name | slugify }}-desc" class="collapse collapsed">
-            <p>{{ dance.description }}</p>
-            {% if dance.youtube_video_id %}
-                {% include youtube_video.html video_id=dance.youtube_video_id %}
-            {% endif %}
-        </div>
-    {% endfor %}
+    <div class="panel-group" id="{{ style.style | slugify }}" role="tablist" aria-multiselectable="true">
+        {% for dance in style.dances %}
+            {% assign dance_for_ids=dance.name | slugify %}
+            {% assign style_and_dance=style.style | slugify | append: '-' | append: dance_for_ids %}
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="{{ style_and_dance }}-label">
+                    <h4 class="panel-title">
+                        <a role="button" class="collapsed" data-parent="#{{ style.style | slugify }}" data-toggle="collapse" href="#{{ style_and_dance }}-desc" aria-expanded="false" aria-controls="{{ style_and_dance }}-desc">
+                            {{ dance.name }}
+                        </a>
+                    </h4>
+                </div>
+                <div id="{{ style_and_dance }}-desc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ style_and_dance }}-label">
+                    <div class="panel-body">
+                        <p>{{ dance.description }}</p>
+                        {% if dance.youtube_video_id %}
+                            {% include youtube_video.html video_id=dance.youtube_video_id %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endfor %}
