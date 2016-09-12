@@ -1,93 +1,185 @@
 - style: International Ballroom
-  description:
+  description: >
+    International ballroom is a style of dance characterized by long, swinging motion
+    that follows a "line of dance" counterclockwise around the room. Ballroom dances are
+    always with a partner and in the international style partners maintain a closed
+    hold&mdash;there are no separations or spins. Figures emphasize motion in the line
+    formed by the couple's arms, torso, and legs. Typical attire for performance/competition
+    is a full tailsuit for the lead and a gown for the follow.
   dances:
-    - name: Waltz
-      description:
-      youtube_video_id:
+    - name: Slow Waltz
+      description: >
+        Originating as a folk dance from Austria, waltz is a dance in 3/4 time characterized
+        by smooth, gliding motion. The music is typically slow with a heavily accented first beat.
+        Many waltz performances and songs are emotional and evocative of love or sadness.
+      youtube_video_id: ekhG01oHkFo
     - name: Tango
-      description:
-      youtube_video_id:
+      description: >
+        Tango originates from Latin countries and has a "march" quality. Usually in 2/4 or 4/4 time,
+        tango often looks violent or angry. This quality comes from its sharp, quick qualities which
+        are achieved by small controlled motions. Don't give your partner whiplash!
+      youtube_video_id: S0tIE7X1Nq0
     - name: Foxtrot
-      description:
-      youtube_video_id:
+      description: >
+        Foxtrot is often danced to big band music. This dance allows for a lot of musicality, playing
+        with the "slows" and the "quicks" on its many figures. This dance can be intimidating for beginners
+        as the "basic" step is a sequence of six figures! Dancing to Sinatra once you've got it all down
+        is well worth the effort, though.
+      youtube_video_id: KvP8MRR9-lM
     - name: Quickstep
-      description:
-      youtube_video_id:
+      description: >
+        This aptly-named dance is energetic and will get you moving around the floor. This dance appears
+        playful and light on the feet though it requires a great amount of physical exertion! Quickstep was
+        developed out of the foxtrot and Charleston by Caribbean and African dancers in New York City in the twenties.
+      youtube_video_id: gTHl6tjdvZY
     - name: Viennese Waltz
-      description:
-      youtube_video_id:
+      description: >
+        In contrast to the slow waltz, Viennese waltz is danced in 6/8 time and is much faster.
+        The international style consists of just seven figures, with most dancers sticking to only three.
+        The Viennese Waltz involves a lot of spinning, so take your dizzy pills beforehand! This is almost
+        always the dance you'll see in a ballroom in the movies.
+      youtube_video_id: zRnZLYXL2mc
 - style: American Smooth
-  description:
+  description: >
+    American style ballroom (smooth) shares many aspects with the international style, but allows dancers to
+    separate into more interesting figures. The swinging motions remain, but dancers can also cross their feet
+    and dance "jazzier" moves in place and side-by-side!
   dances:
-    - name: Waltz
-      description:
-      youtube_video_id:
+    - name: Slow Waltz
+      description: >
+        American slow waltz maintains many of the characteristics of the international style, with the
+        added concepts of separated figures and crossing of the feet. This makes things more interesting
+        (and also more complicated)!
+      youtube_video_id: hlcYYeNwS5Y
     - name: Tango
-      description:
-      youtube_video_id:
+      description: >
+        American tango allows the couple to separate for some figures and many of the beginning figures
+        follow a "slow, slow, quick quick slow" pattern (easy to remember by spelling "T...A...N-G-O...").
+      youtube_video_id: o6cUois9t08
     - name: Foxtrot
-      description:
-      youtube_video_id:
+      description: >
+        The American foxtrot basic step is much easier than the international variety for beginners. The lead steps
+        forward twice, then to the side, and repeats going backward. There are a number of easy steps to learn
+        beyond the basic as well!
+      youtube_video_id: x9b3M6a-cSo
     - name: Viennese Waltz
-      description:
-      youtube_video_id:
+      description: >
+        The American rendition of Viennese Waltz allows for a lot more variety than the international version.
+        Dancers may separate and several figures are danced in place without continuing to spin. Recommended
+        for those with severe motion sickness!
+      youtube_video_id: 3VNMWAHDI-I
 - style: International Latin
-  description:
+  description: >
+    Latin dances are often fast, energetic, and showy. Performers often wear sequined, flashy clothing.
+    Latin dances are heavily inspired by traditional music and dances from South America and the Caribbean.
+    The music can be very complex which is fun when you've developed an ear for it! Latin dances involve
+    a motion in the hips that's hard to learn but fun to use.
   dances:
     - name: Cha Cha
-      description:
-      youtube_video_id:
+      description: >
+        The modern cha cha is the direct result of a music style developed in the 1950s, but has deep
+        Afro-Cuban roots. It's also influenced by mambo and this is evident in some of the figures.
+        Cha cha dancing is sharp and fast.
+      youtube_video_id: ujEtJbANp4o
     - name: Rumba
-      description:
-      youtube_video_id:
+      description: >
+        Rumba is a romantic dance that plays with closing in and pushing away between the dancers.
+        Performances often tell a story and you never know if they'll end in happiness or total anguish!
+        The dance is more smooth than cha cha but still has many sharp movements to cut through the more fluid motion.
+      youtube_video_id: IHV_KH72i54
     - name: Samba
-      description:
-      youtube_video_id:
+      description: >
+        Samba is another dance heavily influenced by West African music and culture. The musical style came out
+        of urban Rio de Janeiro and is still the focus of Carnival every year. The dance that's learned and competed
+        in international Latin style is a more formalized, limited dance. If you like progressive dances then samba
+        is the Latin dance for you! It's the only Latin dance that moves around the floor.
+      youtube_video_id: oWwpCm4ylQs
     - name: Jive
-      description:
-      youtube_video_id:
+      description: >
+        Developed from the jitterbug, jive is one of the most strenuous dances out there. The music is rapid and
+        dancers constantly lift their legs up high and work their core. This dance has plenty of spins and turns
+        as well, so you're in for a ride!
+      youtube_video_id: q3LlSz0koc8
     - name: Paso Doble
-      description:
-      youtube_video_id:
+      description: >
+        Paso doble is a comparatively rare dance learned mostly by competitive Latin dancers. The dance is nearly
+        always danced to a rendition of the song Espa&ntilde;a Ca&ntilde;i and mimics a matador (the lead) flourishing
+        a cape (the follow). There are several points in the music that reach a dramatic climax, at which point
+        dancers choreograph a figure to match. These "highlights" are the subject of much applause!
+      youtube_video_id: 1kaDhTE4lVo
 - style: American Rhythm
-  description:
+  description: >
+    American rhythm dance is the answer to the international style. At first glance many of the dances are identical
+    to their Latin counterparts. However, the technique differs greatly and the available figures vary.
   dances:
     - name: Cha Cha
-      description:
-      youtube_video_id:
+      description: >
+        American cha cha differs from the international style mainly in the syllabus and the way the music is expressed
+        in the dance. While international cha cha depends on dynamic changes in figures, American focuses more on
+        the continuous motion of the body.
+      youtube_video_id: _xo1qSRRMi4
     - name: Rumba
-      description:
-      youtube_video_id:
+      description: >
+        American rumba differs greatly from international. The basic step is in "slow, quick quick" time and forms a box.
+        Many similar figures are danced from this basic, but many maintain the "slow, quick quick" timing which is not
+        prominent in the international style.
+      youtube_video_id: BoSuTtiP3-0
     - name: East Coast Swing
-      description:
-      youtube_video_id:
+      description: >
+        Comparable to jive from international style, swing is an upbeat, energetic dance with a lot of fun figures.
+        Fortunately, the music is much slower! This dance is often done to rock music so it's a chance to jam hard.
+      youtube_video_id: Yyt4Ff-NhPY
     - name: Bolero
-      description:
-      youtube_video_id:
+      description: >
+        Bolero is a 3/4 dance originating in Spain. Visually, it has elements of rumba and waltz. The latter is due
+        to its sweeping motion and the rise and fall in the dance. Bolero is most often learned by competitive rhythm
+        dancers but can be a great one for beginners if they find the right instructor.
+      youtube_video_id: A4ZrD3O1Nm4
     - name: Mambo
-      description:
-      youtube_video_id:
-- style: Social
-  description:
+      description: >
+        The first mambo was a dance invented in Cuba in the early part of the century. Modern mambo is very similar to salsa
+        but danced on the two beat. The dance was standardized to market it to professional studios, since the original dance
+        contained no specific basic steps. Despite this, the modern mambo is lively, fun to dance, and entertaining to watch!
+      youtube_video_id: O6YUzv_D5j0
+- style: Social, Folk, and Traditional
+  description: >
+    There are a host of dances that aren't formally part of many ballroom competitions or syllabi but that still
+    deserve a place on this list! These dances are as fun and technical as any. If you want to step away from the
+    familiar world of ballroom and Latin, one of these might be just for you!
   dances:
     - name: West Coast Swing
-      description:
-      youtube_video_id:
+      description: >
+        West Coast Swing has its roots in Lindy Hop as with many other swing dances. This dance has a much smoother
+        look to it, however, as a result of the posture held while dancing. Each partner keeps a much lower center
+        of gravity and pushes their feet into the floor, making them appear to float at times!
+      youtube_video_id: cTyg2lE95XE
     - name: Hustle
-      description:
-      youtube_video_id:
+      description: >
+        Hustle is a fast dance straight from the disco era. You'll see a ton of spins, turns, and even some flips.
+        The dance is often done so that the partners are constantly turning or passing each other. This dance
+        is easy to improvise and there's an endless list of figures!
+      youtube_video_id: 4EJhVcU9vIA
     - name: Salsa
-      description:
-      youtube_video_id:
+      description: >
+        Chances are good that you can find a club near you where people will dance almost strictly salsa for a few
+        hours straight. The dance's popularity is due to the ease of the basic step, the number of figures available,
+        and the community built around it. People love salsa! Learn the basic and head out to the club. People are
+        usually happy to show you a few new moves!
+      youtube_video_id: qLHP8hl7GfM
     - name: Zouk
-      description:
-      youtube_video_id:
-- style: Folk/Traditional
-  description:
-  dances:
+      description: >
+        Zouk is a dance growing like wildfire in popularity. Zouk evolved from dances like lambada, bolero, and samba
+        and is characterized by controlled body movement. Lead and follow work closely together in the dance, producing
+        motion communicated through the connection.
+      youtube_video_id: F2aNwGNdhoY
     - name: Polka
-      description:
-      youtube_video_id:
+      description: >
+        Polka is a central European dance that progresses around the room. The basic step consists of short half steps
+        that can be done in a shuffling manner or in a more energetic hop.
+      youtube_video_id: -gEgji7f3Hs
     - name: Argentine Tango
-      description:
-      youtube_video_id:
+      description: >
+        Argentine tango is very different from its ballroom cousins in both the music and the technique. The Argentine
+        version is heavily dependent on lead, follow, and improvisation of flourishes by the follow. The music often
+        includes an accordion- or organ-like sound that creeps along similarly to the dance.
+      youtube_video_id: JevZgJ5Q2P8

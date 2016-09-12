@@ -19,9 +19,12 @@
 {% for style in site.data.dances %}
     <h3>{{ style.style }}</h3>
     {% for dance in style.dances %}
-        <h4 data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}">{{ dance.name }}</h4>
+        <h4><a data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}">{{ dance.name }}</a></h4>
         <div id="{{ style.style | slugify }}-{{ dance.name | slugify }}" class="collapse collapsed">
-            Lorem ipsum dolor et simet{{ dance.description }}
+            <p>{{ dance.description }}</p>
+            {% if dance.youtube_video_id %}
+                {% include youtube_video.html video_id=dance.youtube_video_id %}
+            {% endif %}
         </div>
     {% endfor %}
 {% endfor %}
