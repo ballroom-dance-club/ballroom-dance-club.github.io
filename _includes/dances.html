@@ -1,4 +1,4 @@
-<h2>Dances<small><a name="dances"><sup>&para;</sup></a></small></h2>
+<h2>Dances<small><a href="#dances" name="dances"><sup>&para;</sup></a></small></h2>
 
 <p>
     One of the best things about ballroom dancing is the variety of styles you can do!
@@ -20,8 +20,8 @@
     <h3>{{ style.style }}</h3>
     <p>{{ style.description }}</p>
     {% for dance in style.dances %}
-        <h4><a data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}">{{ dance.name }}</a></h4>
-        <div id="{{ style.style | slugify }}-{{ dance.name | slugify }}" class="collapse collapsed">
+    <a href="#{{ style.style | slugify }}-{{ dance.name | slugify }}" name="{{ style.style | slugify }}-{{ dance.name | slugify }}" data-toggle="collapse" data-target="#{{ style.style | slugify }}-{{ dance.name | slugify }}-desc"><h4>{{ dance.name }}</h4></a>
+        <div id="{{ style.style | slugify }}-{{ dance.name | slugify }}-desc" class="collapse collapsed">
             <p>{{ dance.description }}</p>
             {% if dance.youtube_video_id %}
                 {% include youtube_video.html video_id=dance.youtube_video_id %}
