@@ -9,10 +9,11 @@
         <link rel="stylesheet" type="text/css" href="/css/site.css" />
     </head>
     <body>
+        <header>
+        {% include header.html %}
+        </header>
         <div class="container">
-            <header>
-            {% include header.html %}
-            </header>
+            <h1 class="page-header">{{ site.title }}</h1>
             <main>
             {{ content }}
             </main>
