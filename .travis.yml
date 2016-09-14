@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.1.7
 
-script: bundle exec jekyll build && bundle exec htmlproofer ./_site
+script: bundle exec jekyll build && bundle exec htmlproofer ./_site --allow-hash-href
 
 notifications:
   slack: ballroomdanceclub:YufnUV3hTqwD4sNIoDGLoTE5
