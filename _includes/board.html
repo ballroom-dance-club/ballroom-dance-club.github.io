@@ -1,0 +1,21 @@
+<h2>Board Members<small><a href="#board" name="board"><sup>&para;</sup></a></small></h2>
+
+<p>
+    The board members are dedicated to making your experience positive, fun, and educational!
+    If you have any questions at all, feel free to ask one of us at the next club event. If
+    there's an urgent question or concern, <a href="mailto:bdc-inquiry@umich.edu">email us</a>!
+</p>
+
+<ul class="media-list">
+    {% for board_member in site.data.board %}
+    <li class="media">
+        <div class="media-left">
+            <img class="media-object" src="http://placehold.it/75x75" alt="Photo of {{ board_member.person }}, The Ballroom Dance Club's {{ board_member.position }}" />
+        </div>
+        <div class="media-body">
+            <h3 class="media-heading">{{ board_member.position }}</h3>
+            {{ board_member.person }}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
