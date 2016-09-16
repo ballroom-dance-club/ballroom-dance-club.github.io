@@ -1,4 +1,8 @@
-<h2>Dances<small><a href="#dances" name="dances"><sup>&para;</sup></a></small></h2>
+---
+layout: default
+title: Dances
+description: Learn the history behind all the competitive ballroom dances as well as some social and traditional dances.
+---
 
 <p>
     One of the best things about ballroom dancing is the variety of styles you can do!
@@ -17,7 +21,7 @@
 </p>
 
 {% for style in site.data.dances %}
-    <h3>{{ style.style }}</h3>
+    <h2>{{ style.style }}</h2>
 
     <p>{{ style.description }}</p>
     <div class="row">
@@ -28,11 +32,11 @@
                     {% assign style_and_dance=style.style | slugify | append: '-' | append: dance_for_ids %}
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="{{ style_and_dance }}-label">
-                            <h4 class="panel-title">
+                            <h3 class="panel-title">
                                 <a role="button" class="collapsed" data-parent="#{{ style.style | slugify }}" data-toggle="collapse" href="#{{ style_and_dance }}-desc" aria-expanded="false" aria-controls="{{ style_and_dance }}-desc">
                                     {{ dance.name }}
                                 </a>
-                            </h4>
+                            </h3>
                         </div>
                         <div id="{{ style_and_dance }}-desc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ style_and_dance }}-label">
                             <div class="panel-body">

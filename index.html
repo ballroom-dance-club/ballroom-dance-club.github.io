@@ -1,5 +1,7 @@
 ---
 layout: default
+seo:
+  type: Organization
 ---
 
 <p>
@@ -13,12 +15,8 @@ layout: default
     We hope to see you around soon!
 </p>
 
-{% include schedule.html %}
-
-{% include membership.html %}
-
-{% include dances.html %}
-
-{% include board.html %}
-
-{% include faq.html %}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        {% include carousel.html photos=site.data.homepage_photos %}
+    </div>
+</div>
