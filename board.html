@@ -12,7 +12,7 @@ description: Get to know the people who dedicate their time and effort to The Ba
 
 <div class="row">
     <ul class="media-list">
-        {% for board_member in site.data.board | limit: first_column_length %}
+        {% for board_member in site.data.board %}
             {% include board_member.html %}
         {% endfor %}
     </ul>
