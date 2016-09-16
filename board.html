@@ -10,16 +10,10 @@ description: Get to know the people who dedicate their time and effort to The Ba
     there's an urgent question or concern, <a href="mailto:bdc-inquiry@umich.edu">email us</a>!
 </p>
 
-<ul class="media-list">
-    {% for board_member in site.data.board %}
-    <li class="media">
-        <div class="media-left">
-            <img class="media-object" src="http://placehold.it/75x75" alt="Photo of {{ board_member.person }}, The Ballroom Dance Club's {{ board_member.position }}" />
-        </div>
-        <div class="media-body">
-            <h2 class="media-heading">{{ board_member.position }}</h2>
-            {{ board_member.person }}
-        </div>
-    </li>
-    {% endfor %}
-</ul>
+<div class="row">
+    <ul class="media-list">
+        {% for board_member in site.data.board | limit: first_column_length %}
+            {% include board_member.html %}
+        {% endfor %}
+    </ul>
+</div>
