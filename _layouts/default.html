@@ -16,6 +16,9 @@
         <div class="container">
             <h1 class="page-header">{{ page.title|default:"The Ballroom Dance Club" }}</h1>
             <main>
+            {% include sitewide_messaging.html %}
+            {% if page.warning_message %}<div class="alert alert-warning"><p class="lead">{{ page.warning_message }}</p></div>{% endif %}
+            {% if page.info_message %}<div class="alert alert-info"><p class="lead">{{ page.info_message }}</p></div>{% endif %}
             {{ content }}
             </main>
             <hr/>
