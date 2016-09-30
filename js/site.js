@@ -7,10 +7,10 @@ $(".collapse").on("show.bs.collapse", function(){
 function trackEvent(action, category, label){
     if (typeof ga !== "undefined"){
         ga("send", {
-            "hitType": "event",
-            "eventCategory": category,
-            "eventAction": action,
-            "eventLabel": label,
+            hitType: "event",
+            eventCategory: category,
+            eventAction: action,
+            eventLabel: label,
         });
     }
 }
