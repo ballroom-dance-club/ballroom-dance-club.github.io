@@ -33,7 +33,7 @@ description: Learn the history behind all the competitive ballroom dances as wel
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="{{ style_and_dance }}-label">
                             <h3 class="panel-title">
-                                <a role="button" class="collapsed" data-parent="#{{ style.style | slugify }}" data-toggle="collapse" href="#{{ style_and_dance }}-desc" aria-expanded="false" aria-controls="{{ style_and_dance }}-desc">{{ dance.name }}</a>
+                                <a role="button" class="collapsed" data-parent="#{{ style.style | slugify }}" data-toggle="collapse" data-track="button:{{ style.style }} | {{ dance.name }}" href="#{{ style_and_dance }}-desc" aria-expanded="false" aria-controls="{{ style_and_dance }}-desc">{{ dance.name }}</a>
                                 <span class="small glyphicon glyphicon-triangle-right"></span>
                             </h3>
                         </div>
