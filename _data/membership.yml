@@ -1,3 +1,6 @@
+- segment: Anyone
+  duration: Once
+  cost: 5
 - segment: Students
   duration: Semester
   cost: 25
