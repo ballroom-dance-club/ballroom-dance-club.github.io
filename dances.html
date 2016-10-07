@@ -40,6 +40,8 @@ description: Learn the history behind all the competitive ballroom dances as wel
                         <div id="{{ style_and_dance }}-desc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ style_and_dance }}-label">
                             <div class="panel-body">
                                 <p>{{ dance.description }}</p>
+                                <span class="glyphicon glyphicon-film"></span>
+                                <span class="glyphicon glyphicon-triangle-bottom"></span>
                                 {% if dance.youtube_video_id %}
                                     {% include youtube_video.html video_id=dance.youtube_video_id style=style.style dance=dance.name %}
                                 {% endif %}
