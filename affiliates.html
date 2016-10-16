@@ -4,6 +4,8 @@ title: Affiliates
 description: Find other ways to get your dance fix, special offers for dancers, and more!
 ---
 
+{% if site.data.affiliate_organizations %}
+<h2>Organizations</h2>
 <p>
     We aren't the only dance-oriented organization in Ann Arbor! There are many
     opportunities for you to learn different styles of dancing, including salsa,
@@ -11,8 +13,6 @@ description: Find other ways to get your dance fix, special offers for dancers, 
     with more dancing!
 </p>
 
-{% if site.data.affiliate_organizations %}
-<h2>Organizations</h2>
 <ul class="list-unstyled">
 {% for affiliate in site.data.affiliate_organizations %}
     <li>
