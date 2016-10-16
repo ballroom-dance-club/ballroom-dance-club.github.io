@@ -1,0 +1,33 @@
+---
+layout: default
+title: Affiliates
+description: Find other ways to get your dance fix, special offers for dancers, and more!
+---
+
+<p>
+    We aren't the only dance-oriented organization in Ann Arbor! There are many
+    opportunities for you to learn different styles of dancing, including salsa,
+    Argentine tango, and more. Check out the links below and fill up your week
+    with more dancing!
+</p>
+
+{% if site.data.affiliate_organizations %}
+<h2>Organizations</h2>
+<ul class="list-unstyled">
+{% for affiliate in site.data.affiliate_organizations %}
+    <li>
+        <h3><a href="{{ affiliate.link }}" rel="nofollow" target="_blank">{{ affiliate.name }}</a></h3>
+        <p>{{ affiliate.description }}</p>
+    </li> 
+{% endfor %}
+</ul>
+{% endif %}
+
+<h2>Special Offers</h2>
+<!-- VEdance -->
+<iframe
+    scrolling="no"
+    frameborder="0"
+    src="http://www.vedance.com/index/partner-network/?layout=popup&code=U0P6ZZ0WVifb"
+    style="border-width: 0px; width: 100%; height: 220px;">
+</iframe> 
