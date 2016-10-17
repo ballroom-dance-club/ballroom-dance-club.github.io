@@ -24,10 +24,10 @@ description: Find other ways to get your dance fix, special offers for dancers, 
                     <h3>{{ affiliate.name }}</h3>
                     <p>{{ affiliate.description }}</p>
                     {% if affiliate.website %}
-                    <a href="{{ affiliate.website }}" class="btn btn-primary" rel="nofollow" target="_blank">Website</a>
+                    <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" class="btn btn-primary" rel="nofollow" target="_blank">Website</a>
                     {% endif %}
                     {% if affiliate.schedule %}
-                    <a href="{{ affiliate.website }}/{{ affiliate.schedule }}" class="btn btn-default" rel="nofollow" target="_blank">Schedule</a>
+                    <a href="{{ affiliate.website }}/{{ affiliate.schedule }}" data-track="link:{{ affiliate.name }} schedule" class="btn btn-default" rel="nofollow" target="_blank">Schedule</a>
                     {% endif %}
                 </li> 
             </div>
