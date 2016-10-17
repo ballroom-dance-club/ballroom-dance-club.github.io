@@ -2,19 +2,29 @@
   description: >
       Ann Arbor Council for Traditional Music and Dance is an organization
       dedicated to teaching and preserving folk dances and dances that were
-      popular in older times. They hold tons of events so check out their calendar!
-  link: http://aactmad.org/
+      popular in older times.
+  logo: aactmad-logo.png
+  website: http://aactmad.org/
+  schedule: events
 - name: Ballroom Dance Team at the University of Michigan
   description: >
       If you're a student in any degree-granting program, make sure to check
       out the Ballroom Dance Team! They hold multiple lessons a week and provide
-      practice space to members. Once you get some moves under your belt you
-      can travel with them to a competition or even attend their annual event
-      right here in Ann Arbor!
-  link: http://www.michiganballroomteam.com
+      practice space to members.
+  logo: ballroom-dance-team-logo.png
+  website: http://www.michiganballroomteam.com
+  schedule: calendar
 - name: Swing Ann Arbor
   description: >
       Swing Ann Arbor is a University of Michigan student organization that aims
       to provide high-quality swing dancing instruction and weekly dances.
       They teach several kinds of swing from Lindy Hop to Shag!
-  link: https://swingannarbor.com
+  logo: swing-ann-arbor-logo.png
+  website: https://swingannarbor.com
+  schedule: calendar
+- name: Michigan Argentine Tango Club
+  description: >
+      A volunteer-based student organization dedicated to spreading the philosophies
+      and ideas of tango as a form of art!
+  website: http://www.umich.edu/~matc
+  schedule: schedule.html

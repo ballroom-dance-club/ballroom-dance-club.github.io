@@ -13,15 +13,30 @@ description: Find other ways to get your dance fix, special offers for dancers, 
     with more dancing!
 </p>
 
-<ul class="list-unstyled">
-{% for affiliate in site.data.affiliate_organizations %}
-    <li>
-        <h3><a href="{{ affiliate.link }}" rel="nofollow" target="_blank">{{ affiliate.name }}</a></h3>
-        <p>{{ affiliate.description }}</p>
-    </li> 
-{% endfor %}
-</ul>
-{% endif %}
+<div class="row">
+    <ul class="list-unstyled">
+    {% for affiliate in site.data.affiliate_organizations %}
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail">
+            {% if affiliate.logo %}<img src="/images/logos/{{ affiliate.logo }}" alt="{{ affiliate.name }} logo" />{% endif %}
+            <div class="caption">
+                <li>
+                    <h3>{{ affiliate.name }}</h3>
+                    <p>{{ affiliate.description }}</p>
+                    {% if affiliate.website %}
+                    <a href="{{ affiliate.website }}" class="btn btn-primary" rel="nofollow" target="_blank">Website</a>
+                    {% endif %}
+                    {% if affiliate.schedule %}
+                    <a href="{{ affiliate.website }}/{{ affiliate.schedule }}" class="btn btn-default" rel="nofollow" target="_blank">Schedule</a>
+                    {% endif %}
+                </li> 
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </ul>
+    {% endif %}
+</div>
 
 <h2>Special Offers</h2>
 <!-- VEdance -->
