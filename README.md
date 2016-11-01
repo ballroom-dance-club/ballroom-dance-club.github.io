@@ -2,3 +2,5 @@
 
 # ballroom-dance-club.github.io
 The Ballroom Dance Club
+
+Please read [the wiki](../../wiki) to learn how this repository works!
