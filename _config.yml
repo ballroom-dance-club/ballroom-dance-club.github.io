@@ -9,7 +9,7 @@ gems:
 sass:
   style: compressed
 
-exclude: [vendor]
+exclude: ['vendor', 'README.md', 'Gemfile*', 'CNAME']
 
 title: The Ballroom Dance Club
 
