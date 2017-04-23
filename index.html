@@ -4,6 +4,15 @@ seo:
   type: Organization
 ---
 
+{% assign current_date = site.time|date: "%Y%m%d" %}
+{% if current_date == "20170423" %}
+<div class="alert alert-info">
+    <p class="lead">
+    REMINDER: We have board elections this evening at 4pm in the Crofoot room of the Michigan Union!
+    </p>
+</div>
+{% endif %}
+
 <div class="jumbotron">
     <h2>Hello!</h2>
     <p>
