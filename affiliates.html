@@ -18,7 +18,11 @@ description: Find other ways to get your dance fix, special offers for dancers, 
     {% for affiliate in site.data.affiliate_organizations %}
     <div class="col-sm-4 col-md-3">
         <div class="thumbnail">
-            {% if affiliate.logo %}<img src="/images/logos/{{ affiliate.logo }}" alt="{{ affiliate.name }} logo" />{% endif %}
+            {% if affiliate.logo %}
+            <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}">
+                <img src="/images/logos/{{ affiliate.logo }}" alt="{{ affiliate.name }} logo" />
+            </a>
+            {% endif %}
             <div class="caption">
                 <li>
                     <h3>{{ affiliate.name }}</h3>
