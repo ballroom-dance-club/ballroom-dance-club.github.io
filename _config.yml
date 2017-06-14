@@ -17,8 +17,7 @@ description: >
   The Ballroom Dance Club is an organization in Ann Arbor, Michigan
   focused on learning ballroom, Latin, and social dances for fun!
 
-facebook:
-  publisher: https://www.facebook.com/UMBDC
+logo: /images/logos/the-ballroom-dance-club-logo.png
 
 social:
   links:
@@ -32,3 +31,12 @@ domain: http://ballroomdance.club
 
 sitewide_info_message:
 sitewide_warning_message:
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /images/logos/the-ballroom-dance-club-logo.png
+        height: 501
+        width: 512
