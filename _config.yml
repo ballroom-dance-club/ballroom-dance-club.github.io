@@ -2,7 +2,7 @@ github_username:  ballroom-dance-club
 repository: ballroom-dance-club/ballroom-dance-club.github.io
 
 permalink: pretty
-gems:
+options:
   - jekyll-seo-tag
   - jekyll-sitemap
 
