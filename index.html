@@ -8,12 +8,12 @@ seo:
     {% assign current_month = site.time | date: "%m" | plus: 0 %}
     {% assign current_date = site.time | date: "%d" | plus: 0 %}
     {% if current_month == 11 or current_month == 12 and current_date <= 3 %}
-        <h2>2017 Holiday Party!</h2>
         <div class="row">
             <div class="col-sm-4">
                 <img class="img-responsive" src="/images/events/snowflake.png" alt="Snowflake. Watercolor" />
             </div>
             <div class="col-sm-8">
+                <h2>2017 Holiday Party!</h2>
                 <p>
                     Join us on Sunday, December 3rd for a special holiday event! We will be holding lessons as usual from
                     5–8pm. Following lessons, dance along to two wonderful sets of <strong>live music</strong> by
@@ -27,6 +27,7 @@ seo:
                 </p>
             </div>
         </div>
+        <hr />
     {% else %}
         <img class="img-responsive center-block" src="/images/logos/the-ballroom-dance-club-logo.png" alt="The Ballroom Dance Club logo" />
         <h2>Hello!</h2>
