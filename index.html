@@ -5,17 +5,41 @@ seo:
 ---
 
 <div class="jumbotron">
-    <img class="img-responsive center-block" src="/images/logos/the-ballroom-dance-club-logo.png" alt="The Ballroom Dance Club logo" />
-    <h2>Hello!</h2>
-    <p>
-        Welcome to The Ballroom Dance Club! We're an organization in Ann Arbor, Michigan focused on
-        teaching and learning many styles of dance from ballroom to Latin to social.
-        We encourage you to come to our Sunday lessons and hopefully <a href="/membership/">join as a member</a>!
-    </p>
-    <p>
-        You can <a href="http://eepurl.com/b0caij" rel="nofollow" data-track="link:mailing list">join our mailing list</a> to stay in the loop.
-        We also post many of our events like workshops and parties to <a href="{{ site.facebook.publisher }}" data-track="link:Facebook page">our Facebook page</a>.
-        We hope to see you around soon!
-    </p>
+    {% assign current_month = site.time | date: "%m" | plus: 0 %}
+    {% assign current_date = site.time | date: "%d" | plus: 0 %}
+    {% if current_month == 11 or current_month == 12 and current_date <= 3 %}
+        <h2>2017 Holiday Party!</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-responsive" src="/images/events/snowflake.png" alt="Snowflake. Watercolor" />
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    Join us on Sunday, December 3rd for a special holiday event! We will be holding lessons as usual from
+                    5–8pm. Following lessons, dance along to two wonderful sets of <strong>live music</strong> by
+                    <a href="http://www.monroebigband.com" target="_blank" rel="nofollow">The Monroe Big Band</a>!
+                </p>
+                <p>
+                    Refreshments will be provided and semi-formal dress is encouraged.
+                </p>
+                <p>
+                    Entrance is $7 for members and $10 for the general public.
+                </p>
+            </div>
+        </div>
+    {% else %}
+        <img class="img-responsive center-block" src="/images/logos/the-ballroom-dance-club-logo.png" alt="The Ballroom Dance Club logo" />
+        <h2>Hello!</h2>
+        <p>
+            Welcome to The Ballroom Dance Club! We're an organization in Ann Arbor, Michigan focused on
+            teaching and learning many styles of dance from ballroom to Latin to social.
+            We encourage you to come to our Sunday lessons and hopefully <a href="/membership/">join as a member</a>!
+        </p>
+        <p>
+            You can <a href="http://eepurl.com/b0caij" rel="nofollow" data-track="link:mailing list">join our mailing list</a> to stay in the loop.
+            We also post many of our events like workshops and parties to <a href="{{ site.facebook.publisher }}" data-track="link:Facebook page">our Facebook page</a>.
+            We hope to see you around soon!
+        </p>
+    {% endif %}
     <a class="btn btn-primary btn-lg" href="/schedule/">See the schedule</a>
 </div>
