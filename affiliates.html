@@ -14,33 +14,29 @@ description: Find other ways to get your dance fix, special offers for dancers, 
 </p>
 
 <div class="row">
-    <ul class="list-unstyled">
     {% for affiliate in site.data.affiliate_organizations %}
     <div class="col-sm-4 col-md-3">
-        <div class="thumbnail">
-            {% if affiliate.logo %}
-            <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" target="_blank" rel="nofollow">
-                <img src="/images/logos/{{ affiliate.logo }}" alt="{{ affiliate.name }} logo" />
-            </a>
-            {% endif %}
-            <div class="caption">
-                <li>
-                    <h3>{{ affiliate.name }}</h3>
-                    <p>{{ affiliate.description }}</p>
-                    {% if affiliate.website %}
-                    <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" class="btn btn-primary" rel="nofollow" target="_blank">Website</a>
-                    {% endif %}
-                    {% if affiliate.schedule %}
-                    <a href="{{ affiliate.website }}/{{ affiliate.schedule }}" data-track="link:{{ affiliate.name }} schedule" class="btn btn-default" rel="nofollow" target="_blank">Schedule</a>
-                    {% endif %}
-                </li> 
+        <div class="card">
+            <div class="card-body">
+                {% if affiliate.logo %}
+                <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" target="_blank" rel="nofollow">
+                    <img class="img-fluid" src="/images/logos/{{ affiliate.logo }}" alt="{{ affiliate.name }} logo" />
+                </a>
+                {% endif %}
+                <h3>{{ affiliate.name }}</h3>
+                <p>{{ affiliate.description }}</p>
+                {% if affiliate.website %}
+                <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" class="btn btn-primary" rel="nofollow" target="_blank">Website</a>
+                {% endif %}
+                {% if affiliate.schedule %}
+                <a href="{{ affiliate.website }}/{{ affiliate.schedule }}" data-track="link:{{ affiliate.name }} schedule" class="btn btn-outline-secondary" rel="nofollow" target="_blank">Schedule</a>
+                {% endif %}
             </div>
         </div>
     </div>
     {% endfor %}
-    </ul>
-    {% endif %}
 </div>
+{% endif %}
 
 <h2>Special Offers</h2>
 <!-- VEdance -->
