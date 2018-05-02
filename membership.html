@@ -35,7 +35,9 @@ description: Get the details about lesson and membership fees for The Ballroom D
                 {% for segment in segments %}
                     {% for membership_option in segment.items %}
                     <tr>
-                        <td>{{ segment.name }}</td>
+                        {% if forloop.first %}
+                        <td rowspan="{{ segment.items|size }}">{{ segment.name }}</td>
+                        {% endif %}
                         <td>{{ membership_option.duration }}</td>
                         <td>${{ membership_option.cost }}</td>
                     </tr>

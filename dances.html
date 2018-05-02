@@ -23,46 +23,62 @@ description: Learn the history behind all the competitive ballroom dances as wel
 {% if site.data.dances %}
     <ul class="nav nav-tabs" role="tablist">
     {% for style in site.data.dances %}
-        <li role="presentation"{% if forloop.first %} class="active"{% endif %}><a href="#{{ style.style | slugify }}-pane" aria-controls="{{ style.style | slugify }}-pane" role="tab" data-toggle="tab">{{ style.style }}</a></li>
+        <li class="nav-item">
+            <a
+                class="nav-link{% if forloop.first %} active{% endif %}"
+                href="#{{ style.style | slugify }}-pane"
+                id="{{ style.style | slugify }}-tab"
+                aria-controls="{{ style.style | slugify }}-pane"
+                role="tab"
+                data-toggle="tab"
+                aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            >{{ style.style }}</a>
+        </li>
     {% endfor %}
     </ul>
 
     <div class="tab-content">
     {% for style in site.data.dances %}
-    <div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ style.style | slugify }}-pane">
-        <h2>{{ style.style }}</h2>
+        <div role="tabpanel" class="tab-pane fade show{% if forloop.first %} active{% endif %}" id="{{ style.style | slugify }}-pane" aria-labelledby="{{ style.style | slugify }}-tab">
+            <h2 class="mt-4">{{ style.style }}</h2>
 
-        <p>{{ style.description }}</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel-group" id="{{ style.style | slugify }}" role="tablist" aria-multiselectable="true">
-                    {% for dance in style.dances %}
-                        {% assign dance_for_ids=dance.name | slugify %}
-                        {% assign style_and_dance=style.style | slugify | append: '-' | append: dance_for_ids %}
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="{{ style_and_dance }}-label">
-                                <h3 class="panel-title">
-                                    <a role="button" class="collapsed" data-parent="#{{ style.style | slugify }}" data-toggle="collapse" data-track="button:{{ style.style }} | {{ dance.name }}" href="#{{ style_and_dance }}-desc" aria-expanded="false" aria-controls="{{ style_and_dance }}-desc">{{ dance.name }}</a>
-                                    <span class="small glyphicon glyphicon-triangle-right"></span>
+            <p>{{ style.description }}</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="{{ style.style | slugify }}">
+                        {% for dance in style.dances %}
+                            {% assign dance_for_ids=dance.name | slugify %}
+                            {% assign style_and_dance=style.style | slugify | append: '-' | append: dance_for_ids %}
+                            <div class="card">
+                                <h3 class="card-header p-0">
+                                    <button
+                                        role="button"
+                                        class="btn btn-link collapsed"
+                                        data-parent="#{{ style.style | slugify }}"
+                                        data-toggle="collapse"
+                                        data-track="button:{{ style.style }} | {{ dance.name }}"
+                                        href="#{{ style_and_dance }}-desc"
+                                        aria-expanded="false"
+                                        data-target="#{{ style_and_dance }}-desc"
+                                        aria-controls="{{ style_and_dance }}-desc"
+                                    >
+                                        {{ dance.name }}
+                                    </button>
                                 </h3>
-                            </div>
-                            <div id="{{ style_and_dance }}-desc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ style_and_dance }}-label">
-                                <div class="panel-body">
-                                    <p>{{ dance.description }}</p>
-                                    <span class="glyphicon glyphicon-film"></span>
-                                    <span class="glyphicon glyphicon-triangle-bottom"></span>
-                                    {% if dance.youtube_video_id %}
-                                        {% include youtube_video.html video_id=dance.youtube_video_id style=style.style dance=dance.name %}
-                                    {% endif %}
+                                <div id="{{ style_and_dance }}-desc" class="collapse" data-parent="#{{ style.style | slugify }}">
+                                    <div class="card-body">
+                                        <p>{{ dance.description }}</p>
+                                        {% if dance.youtube_video_id %}
+                                            {% include youtube_video.html video_id=dance.youtube_video_id style=style.style dance=dance.name %}
+                                        {% endif %}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     {% endfor %}
     </div>
-
 {% endif %}

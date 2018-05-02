@@ -1,11 +1,15 @@
 <div class="col-md-6">
-    <li class="media media-with-y-margin">
-        <div class="media-left">
-            <img class="media-object" height="100" width="100" src="{% if board_member.image_filename %}/images/board/{{ board_member.image_filename }}{% else %}https://via.placeholder.com/75x75{% endif %}" alt="Photo of {{ board_member.person }}, The Ballroom Dance Club's {{ board_member.position }}" />
-        </div>
+    <div class="media my-2">
+        <img
+            class="mr-4"
+            height="100"
+            width="100"
+            src="{% if board_member.image_filename %}/images/board/{{ board_member.image_filename }}{% else %}https://via.placeholder.com/75x75{% endif %}"
+            alt="Photo of {{ board_member.person }}, The Ballroom Dance Club's {{ board_member.position }}"
+        >
         <div class="media-body">
-            <h2 class="media-heading">{{ board_member.position }}</h2>
+            <h2>{{ board_member.position }}</h2>
             <p class="lead">{{ board_member.person }}</p>
         </div>
-    </li>
+    </div>
 </div>
