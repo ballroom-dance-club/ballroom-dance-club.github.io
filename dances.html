@@ -68,6 +68,8 @@ description: Learn the history behind all the competitive ballroom dances as wel
                                 <div id="{{ style_and_dance }}-desc" class="collapse" data-parent="#{{ style.style | slugify }}">
                                     <div class="card-body">
                                         <p>{{ dance.description }}</p>
+                                        <i class="fab fa-youtube"></i>
+                                        <i class="fas fa-caret-down"></i>
                                         {% if dance.youtube_video_id %}
                                             {% include youtube_video.html video_id=dance.youtube_video_id style=style.style dance=dance.name %}
                                         {% endif %}
