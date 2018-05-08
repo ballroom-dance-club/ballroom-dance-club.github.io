@@ -19,17 +19,17 @@ description: Find other ways to get your dance fix, special offers for dancers, 
         <div class="card">
             <div class="card-body">
                 {% if affiliate.logo %}
-                <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" target="_blank" rel="nofollow">
+                <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" target="_blank" rel="nofollow noopener">
                     <img class="img-fluid" src="/images/logos/{{ affiliate.logo }}" alt="{{ affiliate.name }} logo" />
                 </a>
                 {% endif %}
                 <h3>{{ affiliate.name }}</h3>
                 <p>{{ affiliate.description }}</p>
                 {% if affiliate.website %}
-                <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" class="btn btn-primary" rel="nofollow" target="_blank">Website</a>
+                <a href="{{ affiliate.website }}" data-track="link:{{ affiliate.name }}" class="btn btn-primary" rel="nofollow noopener" target="_blank">Website</a>
                 {% endif %}
                 {% if affiliate.schedule %}
-                <a href="{{ affiliate.website }}/{{ affiliate.schedule }}" data-track="link:{{ affiliate.name }} schedule" class="btn btn-outline-secondary" rel="nofollow" target="_blank">Schedule</a>
+                <a href="{{ affiliate.website }}/{{ affiliate.schedule }}" data-track="link:{{ affiliate.name }} schedule" class="btn btn-outline-secondary" rel="nofollow noopener" target="_blank">Schedule</a>
                 {% endif %}
             </div>
         </div>
