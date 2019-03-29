@@ -3,7 +3,7 @@ cache: bundler
 rvm:
   - 2.5.3
 
-script: bundle exec jekyll build && bundle exec htmlproofer ./_site --allow-hash-href
+script: bundle exec jekyll build && bundle exec htmlproofer ./_site --allow-hash-href --typoheus-config '{"ssl_verifypeer": false}'
 
 notifications:
   slack: ballroomdanceclub:YufnUV3hTqwD4sNIoDGLoTE5
