@@ -5,7 +5,7 @@ rvm:
 
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --allow-hash-href --typhoeus-config '{"ssl_verifypeer": false}'
+  - bundle exec htmlproofer ./_site --allow-hash-href
 
 notifications:
   slack: ballroomdanceclub:YufnUV3hTqwD4sNIoDGLoTE5
